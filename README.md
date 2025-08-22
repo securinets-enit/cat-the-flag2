@@ -18,7 +18,8 @@ Each challenge should includes:
 - Binary Exploitation.
 - Reverse Engineering.
 - Threat Intelligence.
-  STILL LOOKING FOR: - Crypto/Misc
+  
+  STILL LOOKING FOR AUTHORS: - Crypto/Misc
 
 ---
 
