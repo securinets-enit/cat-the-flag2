@@ -1,8 +1,8 @@
 # Cat The Flag 2nd Edition
 
-In this repo, you'll find the assets of Securinets ENIT's Cat The Flag CTF 2nd Edition.
+In this repo, you'll find the assets for Securinets ENIT's Cat The Flag CTF 2nd Edition.
 
-> For Now: This repository is private and intended for collaboration between challenge authors.
+> For Now: This repository is private and intended for collaboration between challenge authors. Please avoid puhshing directly to the `main` branch as it can cause conflicts between the authors of the same cateogry. We can create a ruleset for that but we need to upgrade the account, so we rely on your awareness.
 
 Each challenge should includes:
 - The description file
