@@ -17,6 +17,4 @@ HQ: “We’ve just seen a new Mandiant report: Something tied to APT41 and expl
 Your task: investigate artifacts provided by HQ, extract IOCs, map techniques to MITRE ATT&CK, and confirm whether APT41 is inside your network. This isn't a normal day as you expected.
 
 
-Author: 7ankalis
-
-
+**Author:** 7ankalis
