@@ -15,8 +15,8 @@ type question struct {
 
 func main() {
 	questions := []question{
-		{"What is the link of the malicious downloaded tool?", "https://github.com/user/repo"},
-		{"What is the link to the main developer's github?", "https://github.com/user"},
+		{"What is the link of the malicious downloaded tool?", "https://github.com/goerge-billard/"},
+		{"What is the link to the main developer's github?", "https://github.com/goerge-billard"},
 		{"How many arguments does the tool expect?", "2"},
 		{"What is the suspicious function that's being called in the main function? Notice that it gets called by providing any argument.", "optimize_compression()"},
 		{"How many arguments does `optimize_compression()` take?", "0"},
