@@ -1,0 +1,19 @@
+Sat Aug 23 17:06:45 2025 1 198.44.128.4 759 0 /users.eml b _ o a anonymous ftp 0 * i
+Sat Aug 23 17:10:53 2025 1 198.44.128.4 759 44 /users.eml b _ o a anonymous ftp 0 * c
+Sat Aug 23 17:10:58 2025 1 198.44.128.4 759 20 /welcome.txt b _ o a anonymous ftp 0 * c
+Sat Aug 23 17:19:19 2025 1 198.44.128.4 759 196 /users.eml b _ o a anonymous ftp 0 * c
+Sat Aug 23 17:31:58 2025 1 198.44.128.4 759 1039 /HeadOfITNotice.eml b _ o a anonymous ftp 0 * c
+Sat Aug 23 18:46:02 2025 1 198.44.128.4 759 1039 /HeadOfITNotice.eml b _ o a anonymous ftp 0 * c
+Sat Aug 23 18:46:33 2025 1 198.44.128.4 759 5844 /home/samirloussif/vsftpd.conf b _ o r samirloussif ftp 0 * c
+Sat Aug 23 18:46:35 2025 1 198.44.128.4 759 0 /home/samirloussif/ftp_ b _ o r samirloussif ftp 0 * i
+Sat Aug 23 18:49:47 2025 1 198.44.128.4 759 5844 /home/samirloussif/vsftpd.conf b _ o r samirloussif ftp 0 * c
+Sat Aug 23 18:50:48 2025 1 198.44.128.4 759 52 /var/www/html/critical_app/db/database.sqlite  _ o r samirloussif ftp 0 * c
+Sat Aug 23 18:53:08 2025 1 198.44.128.4 759 1039 /users.eml b _ o a anonymous ftp 0 * c
+Sat Aug 23 19:37:12 2025 1 198.44.128.4 1039 /users.eml b _ o a anonymous ftp 0 * c
+Sat Aug 23 19:39:05 2025 1 198.44.128.4 826 /home/samirloussif/ftp_files/notes.txt b _ o r samirloussif ftp 0 * c
+Sat Aug 23 19:39:10 2025 1 198.44.128.4 759 /home/samirloussif/ftp_files/important.eml b _ o r samirloussif ftp 0 * c
+Sat Aug 23 19:40:00 2025 2 198.44.128.4 1024 /home/samirloussif/linpeas.sh b _ i r samirloussif ftp 0 * i
+Sat Aug 23 19:41:15 2025 2 198.44.128.4 2048 /home/samirloussif/pspy64 b _ i r samirloussif ftp 0 * i
+Sat Aug 23 19:42:30 2025 2 198.44.128.4 4096 /home/samirloussif/mimikatz.exe b _ i r samirloussif ftp 0 * i
+Sat Aug 23 19:43:45 2025 2 198.44.128.4 5120 /home/samirloussif/chisel b _ i r samirloussif ftp 0 * i
+Sat Aug 23 19:44:50 2025 2 198.44.128.4 768 /home/samirloussif/autorooter.py b _ i r samirloussif ftp 0 * i

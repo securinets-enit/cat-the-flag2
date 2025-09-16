@@ -40,7 +40,7 @@ func main() {
 		{"Another file is downloaded and manipulated. What is the IP address where this file gets downloaded from?", "20.74.81.63"},
 		{"What port?", "55612"},
 		{"What is the file name?", "decompress.c"},
-		{"To obtain a full rev shell written in c, what is the full command that the script runs?", "cat decompress.c >> compress.c"},
+		{"To obtain a full rev shell written in c, what is the full command that the script runs to obtain the complete file?", "cat decompress.c >> compress.c"},
 		{"What is the resulting binary name?", "systemdihh"},
 		{"The resulting binary is calling a rev shell on a specific ip. What is it?", "20.74.81.63"},
 		{"On what port?", "80"},

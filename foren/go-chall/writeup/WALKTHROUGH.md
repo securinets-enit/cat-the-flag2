@@ -36,7 +36,8 @@ Players should focus on the **supply chain and library import vectors**:
 
 To keep players on track and prevent wasted effort, here are the common distractions:
 
-1. **Backend server simulation**: You do **not** need to investigate the backend proxy server’s responses. It’s just a decoy to make the project seem legitimate.  
+0. Analyzing the project in itself isn't the idea of the challenge and should lead to nothing, unless analyzing what functions are being used from the cachingio library. When the player goes in that path, he should be fine. 
+1. **Backend server simulation**: You do **not** need to investigate the backend proxy server’s responses. It’s just a decoy to make the project seem legitimate.
 2. **Metrics, tracing, and logging**: These are there to make the project feel realistic. You don’t need to reverse-engineer every metric or log.  
 3. **Rate limiting and CORS setup**: These are normal features and **not malicious**.  
 4. **Dockerfile and containerization files**: No need to run the container; the focus is on the import and the library behavior.  
@@ -46,9 +47,8 @@ To keep players on track and prevent wasted effort, here are the common distract
 
 ## Investigation Tips
 
-- Focus on **what happens automatically when the project runs**.  
 - Identify **which library or dependency** triggers unexpected behavior.  
-- Look for **files, environment variables, or network activity** that appear without explicit user actions.  
+- Look for **files, environment variables, or network activity** that appear without explicit user actions in one of the projects.  
 - Once you find the suspicious library, everything should be clear.
 
 ---
@@ -62,4 +62,20 @@ This challenge demonstrates:
 3. **Safe exploration**: distinguishing real malicious behavior from decoy features.  
 
 Players will not only retrieve the flag but also gain a strong understanding of **how importing untrusted libraries can compromise systems**, even when the main project appears completely safe.
+
+---
+
+## What to do after?
+
+This challenge could be turned into a threat intel challenge. The player can map the techniques and tactics used by the malware to MITRE's tactics and techniques. I don't know what APTs used this technique in their attack chain, surely there are plenty, but the player can put on that challenge with further research. 
+
+
+
+
+
+
+
+
+
+
 
