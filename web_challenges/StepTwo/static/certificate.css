@@ -1,0 +1,50 @@
+.certificate-container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    border: 10px solid #2c3e50;
+    background: #fefefe;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.certificate-title {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.certificate-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 20px 0;
+}
+
+.course-name {
+    font-style: italic;
+    font-size: 22px;
+    color: #2c3e50;
+}
+
+.certificate-date {
+    font-size: 16px;
+    color: #444;
+    margin: 25px 0;
+}
+
+.signature {
+    margin-top: 40px;
+}
+
+.signature img {
+    width: 180px;
+    height: auto;
+}
+
+.signature p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+}

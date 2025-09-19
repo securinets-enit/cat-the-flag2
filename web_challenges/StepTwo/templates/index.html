@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto text-center">
+        <div class="jumbotron bg-light p-5 rounded">
+            <h1 class="display-4">Welcome to School Portal</h1>
+            <p class="lead">Manage your academic journey with our comprehensive school management system.</p>
+            <hr class="my-4">
+            <p>Complete your profile, view your timetable, report absences, and generate certificates.</p>
+            {% if not session.get('user_id') %}
+            <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+            <a class="btn btn-outline-primary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

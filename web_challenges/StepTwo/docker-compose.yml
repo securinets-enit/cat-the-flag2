@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  challenge-app:
+    build: .
+    container_name: certificate_challenge
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=SuperSecretKeyForCTF
+      - FLAG=SecurinetsENIT{c96ebab349abb03c26b0824b9d2bf2cb769294f5ea271ace67a085d019ccabf4}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

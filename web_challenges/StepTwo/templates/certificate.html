@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Certificate{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+    <h2 class="mb-4 fw-bold text-center text-gradient">🎓 Certificate Generation</h2>
+
+    <!-- Info Banner -->
+    <div class="alert alert-info shadow-sm rounded-3">
+        <h5 class="fw-bold"><i class="bi bi-info-circle-fill"></i> Important Notice</h5>
+        <p class="mb-0">To generate your certificate, please complete your profile first. The certificate will use your registered name.</p>
+    </div>
+
+    <!-- Generate Certificate Card -->
+    <div class="card shadow-lg border-0 rounded-4 mb-5 glass-card">
+        <div class="card-header bg-primary text-white rounded-top-4">
+            <h5 class="mb-0"><i class="bi bi-award-fill"></i> Generate Certificate</h5>
+        </div>
+        <div class="card-body p-4">
+            <form method="POST" action="{{ url_for('generate_certificate') }}">
+                <div class="mb-3">
+                    <label for="course_name" class="form-label fw-semibold">Course Name</label>
+                    <input type="text" class="form-control form-control-lg rounded-pill shadow-sm"
+                           id="course_name" name="course_name" placeholder="e.g. Advanced Cybersecurity" required>
+                </div>
+                <button type="submit" class="btn btn-gradient px-4 py-2 rounded-pill fw-semibold shadow-sm">
+                    <i class="bi bi-magic"></i> Generate
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Certificates List -->
+    <div class="card shadow-lg border-0 rounded-4 glass-card">
+        <div class="card-header bg-dark text-white rounded-top-4">
+            <h5 class="mb-0"><i class="bi bi-collection"></i> Your Certificates</h5>
+        </div>
+        <div class="card-body p-4">
+            {% if certificates %}
+            <div class="table-responsive">
+                <table class="table align-middle table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>📘 Course Name</th>
+                            <th>📅 Issue Date</th>
+                            <th>⚡ Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cert in certificates %}
+                        <tr>
+                            <td class="fw-semibold">{{ cert.course_name }}</td>
+                            <td>{{ cert.issue_date }}</td>
+                            <td>
+                                <a href="{{ url_for('download_certificate', cert_id=cert.id) }}"
+                                   class="btn btn-sm btn-gradient rounded-pill">
+                                    <i class="bi bi-download"></i> Download
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <p class="text-center text-muted my-3">
+                <i class="bi bi-emoji-frown"></i> You haven't generated any certificates yet.
+            </p>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+
+<!-- Custom Styles -->
+<style>
+.text-gradient {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-gradient {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+.btn-gradient:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+}
+</style>
+{% endblock %}
