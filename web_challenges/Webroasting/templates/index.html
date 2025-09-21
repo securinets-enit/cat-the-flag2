@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Microservices Manager</title>
+  <style>
+    /* Basic styling for the body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    /* Main container for the form and header */
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    /* Header styling */
+    h1 {
+      margin-bottom: 30px;
+      color: #0056b3;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Input fields styling */
+    input[type="text"],
+    input[type="url"],
+    input[type="submit"] {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    /* Focus state for inputs */
+    input:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    }
+
+    /* Button styling */
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    /* Button hover state */
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Link styling */
+    .login-link-container {
+      margin-top: 25px;
+    }
+
+    .login-link-container a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .login-link-container a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to our Cloud Microservices Manager</h1>
+  <form method="post" action="/register">
+    <input type="text" name="service_name" placeholder="Service Name" required>
+    <input type="url" name="service_url" placeholder="Your service URL" required>
+    <button type="submit">Register Service</button>
+  </form>
+  <div class="login-link-container">
+    <a href="/login">Already have an account? Login here.</a>
+  </div>
+</div>
+
+</body>
+</html>
