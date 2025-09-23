@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  crypto-challenge:
+    build: .
+    container_name: crypto-challenge
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./templates:/app/templates
+    restart: unless-stopped
