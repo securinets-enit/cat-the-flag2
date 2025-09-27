@@ -1,10 +1,10 @@
 1. What is the link of the malicious downloaded tool. Answer: https://github.com/user/repo
 2. What is the link to the main developper's github? Answer: https://github.com/user
 3. How many arguments does the tool expect? Answer: 2
-4. What is the suspicious function that's being called in the main function? Notice that it gets called by providing any arugment. Answer: optimize_compression().
+4. What is the suspicious function that's being called in the main function? (HINT: Notice that it gets called by providing any arugment.) Answer: optimize_compression().
 5. How many arguments does `optimize_compression()` take? Answer: 0
 6. If the user provides something other than `compress`, `decompress` or `optimize`, what does the program print to screen? Answer: Unknown command
-7. Another function gets called. What is it? Answer: optimize_compression()
+7. When an Unknown command is provided, the program still runs another function. What is it? Answer: optimize_compression()
 
 8. See now the suspicious function is being called in all the possible cases. Let's follow up.
 
@@ -13,20 +13,21 @@
 11. Which one is the malicious one? answer:  optimize_session()
 12. What is the IP address of the threat actor? answer: 20.74.81.63
 13. What is the requested file name? answer: test.sh
-14. From what port is this file requested? Answer: 2982
-15. What protocol is used for the trasnfer? Answer: http
+14. At what port is this file available? Answer: 2982
+15. Which Application Layer protocol is in use? Answer: http
 16. What is the SimpleHTTP version of the malicous actor's server?  answer: 0.6
 17. Reconstruct the test.sh file. What IP address does the script call. answer: 20.74.81.63
-18. What port? answer: 23765
+18. What port does it knock on? answer: 23765
 19. What files are being requested? format file1,file2. answer: cleaup.sh, compress.c
-20. What is the absolute path of the directory where the script saves the paylods?
+20. What is the absolute path of the directory where the script saves the paylods? answer: /tmp/systemd-private-f9a03082bc0f4222bac645fc509f2f3a-systemdd-timesyncd.service-SEENIT
 21. What legit system service the threat actor is trying to mimic? answer: systemd
 22. Check the c source code. How many imports are there? answer: 5
-23. Is compress.c alone able to be compiled?
+23. Is compress.c alone able to be compiled? answer: No
 24. Another file is downloaded and manipulated. What is the IP address where this file gets downloaded from? answer: 20.74.81.63
 25. What port? answer: 55612
 26. What is the file name? answer: decompress.c 
-27. To obtain a full rev shell written in c, what is the full command that the script runs?  answer: cat decompress.c >> compress.c
+27. To obtain a full C reverse shell, what is the full command that the script runs?  answer: cat decompress.c >> compress.c
 28. What is the resulting binary name? answer: systemdihh
 30. The resulting binary is calling a rev shell on a specific ip. What is it? 20.74.81.63 
 31. On what port? 80
+32. Interact with the final port. Do your footprinting on the server and retrieve a custom field that would leak a LOT on the threat actor. 

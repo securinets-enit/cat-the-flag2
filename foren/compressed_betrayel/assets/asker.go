@@ -43,7 +43,7 @@ func main() {
 		{"To obtain a full rev shell written in c, what is the full command that the script runs to obtain the complete file?", "cat decompress.c >> compress.c"},
 		{"What is the resulting binary name?", "systemdihh"},
 		{"The resulting binary is calling a rev shell on a specific ip. What is it?", "20.74.81.63"},
-		{"On what port?", "80"},
+		{"On what port?", "9476"},
 	}
 
 	reader := bufio.NewReader(os.Stdin)
