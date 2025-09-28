@@ -1,0 +1,24 @@
+name: "GenZ"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  Kids these days and their wacky language, can't even talk in plain English anymore! Can you decode this message?
+
+  `👊👜👚👬👩👠👥👜👫👪🐼👅👀👋👲👩🐪👘👣👖🐧👥🐪👪👖🐫👣👮🐫👰👪👖👢🐪🐪👧👖🐨👫👖👘👖🐜🐨🐧🐧👖👩🐪👘👣👴`
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{r3al_0n3s_4lw4ys_k33p_1t_a_%100_r3al}
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

@@ -1,0 +1,26 @@
+name: "Calculus I"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  Let's do some basic calculus! Given the following RSA parameters, can you find the flag?
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{wh4t_3ndl3ss_jwa7_d03s_t0_a_mf}
+
+files:
+  - chall.py
+  - output.json
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

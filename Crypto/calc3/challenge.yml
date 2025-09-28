@@ -1,0 +1,26 @@
+name: "Calculus III"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  Document Autorisé
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{n0_wond3r_y0u'r3_an_3ng1n33r!}
+
+files:
+  - chall.py
+  - output.json
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

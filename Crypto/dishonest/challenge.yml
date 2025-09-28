@@ -1,0 +1,28 @@
+name: "Dishonest Oracle"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  The oracle is tired of your games... Now it's continuously learning and adapting to lie in the most convincing way possible.  
+  Can you still get the flag?
+
+  >Wrap whatever you get in `SecurinetsENIT{}` to submit the flag.
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{3vEn_a_Ly1ng_cL0cK_1s_r1ghT_s0Met1ME5_buT_Ev3nTuAllY}
+
+files:
+  - chall.py
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

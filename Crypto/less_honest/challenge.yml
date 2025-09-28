@@ -1,0 +1,26 @@
+name: "Less Honest Oracle"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  This oracle is not as friendly as the previous one.  
+  It might lie to you sometimes. Can you still get the flag?
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{trust_y0urs3lf_but_d0ubt_3v3ryth1ng_3ls3}
+
+files:
+  - chall.py
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

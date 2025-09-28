@@ -1,0 +1,26 @@
+name: "Calculus II"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  Let's see if you paid attention in math lectures!
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{y0u'r3_bac_m4th_ar3n't_y0u?}
+
+files:
+  - chall.py
+  - output.json
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

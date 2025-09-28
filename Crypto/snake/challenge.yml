@@ -1,0 +1,26 @@
+name: "Achromatopsia"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  The colors Mason, what do they mean?
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{th1s_1s_n0t_4_QR_c0d3_1_sw34r}
+
+files:
+  - handouts/chall.py
+  - handouts/maze.png
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"

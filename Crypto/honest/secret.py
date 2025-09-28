@@ -1,0 +1,1 @@
+flag = 'SecurinetsENIT{bl1nd_tru5t_w0nt_g3t_y0u_far}'

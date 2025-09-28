@@ -1,0 +1,26 @@
+name: "Very Honest Oracle"
+category: Cryptography
+attribution: "[Bitraven](https://cs.bitraven.pro)"
+description: |-
+  This world is full of liars, but not this oracle! This oracle always tells the truth, no matter what you ask it.  
+  Isn't that nice of it?
+
+  **Author**: [Bitraven](https://cs.bitraven.pro)
+
+flags:
+  - SecurinetsENIT{bl1nd_tru5t_w0nt_g3t_y0u_far}
+
+files:
+  - chall.py
+
+state: hidden
+logic: any
+
+value: 500
+type: dynamic
+extra:
+  function: logarithmic
+  initial: 500
+  decay: 15
+  minimum: 100
+version: "0.1"
