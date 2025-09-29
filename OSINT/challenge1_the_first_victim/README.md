@@ -14,12 +14,11 @@ Amira worked as a Senior Software Engineer at Gorjeni Corp, specializing in cybe
 
 ### Challenge Tasks
 1. **Victim Profiling**: Create a comprehensive profile of Amira El Youssfi
-2. **Timeline Reconstruction**: Create a timeline of Amira's last 48 hours before her death
 3. **Digital Footprint Analysis**: Analyze Amira's online presence
 
 ### Social Media Accounts to Investigate
-- **LinkedIn**: Search for "Amira El Youssfi" at Gorjeni Corp
-- **Twitter**: @AmiraElYoussfi_Tech
+- **LinkedIn**: Search for "Amira El Youssfi" at Gorjeni Corp - https://www.linkedin.com/in/amira-el-youssfi-801121384/
+- **Twitter**: https://x.com/AYoussfi1122
 
 ### Investigation Instructions
 1. Search for Amira El Youssfi on LinkedIn and Twitter
@@ -37,5 +36,5 @@ SecurinetsENIT{flag_content}
 4. The flag is in one of her Twitter comments
 
 ### Difficulty: Easy
-### Estimated Time: 30-45 minutes
+### Estimated Time: 05-45 minutes
 ### Points: 100

@@ -23,17 +23,17 @@ ip.src==172.16.10.20 && tcp.port==80 && http
 tshark -r cafe_connection.pcap -Y "ip.src==172.16.10.20 && tcp.port==80 && http && http.content_length" -T fields -e http.content_length \
 | awk '{printf("%s", sprintf("%c", $1))} END {print ""}'
 ```
+OR
+# Extract content lengths
+```bash
+tshark -r cafe_connection.pcap -Y "http.response.code == 200" -T fields -e http.content_length
+```
+and then
+# Convert to characters
+```
+tshark -r cafe_connection.pcap -Y "http.response.code == 200" -T fields -e http.content_length | grep -v "^$" | while read line; do printf "\\$(printf "%03o" $line)"; done
+```
 Output:
 ```
 SecurinetsENIT{4r3_Y0u_R34LLY_4_N1Nj4??}
 ```
-
-## Anti‑unintended checks
-- No plaintext flag in payloads: headers carry integers only, bodies are filler.
-- Random noise (ARP, DNS, extra GETs) avoids trivial `strings`/`grep` solves.
-- The signal is only in the `Content-Length` header; other headers are normal.
-
-## Flag
-```
-SecurinetsENIT{4r3_Y0u_R34LLY_4_N1Nj4??}
-``` 

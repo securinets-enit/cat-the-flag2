@@ -74,7 +74,7 @@ The Zodiac uploaded 7 images to darknet forums. Each image contains a part of th
 ### Method 1: Automated Solution
 ```bash
 # PCAP approach (analyzes network traffic and extracts images)
-python3 solution_files/solver.py challenge_files/el_kabbaria_hotel_capture.pcap
+python3 solution_files/solver.py el_kabbaria_hotel_capture.pcap
 
 # Direct approach (uses original images for verification)
 python3 solution_files/solver.py --direct
@@ -106,7 +106,7 @@ For comprehensive step-by-step instructions with both Wireshark GUI and tshark c
 The challenge can be solved with a single command:
 
 ```bash
-python3 solution_files/solver.py challenge_files/el_kabbaria_hotel_capture.pcap
+python3 solution_files/solver.py el_kabbaria_hotel_capture.pcap
 ```
 
 This will automatically:
@@ -126,27 +126,27 @@ This will automatically:
 5. Packet 69 contains the next challenge password
 6. Some images are double Base64 encoded
 
-## Progressive Hints (For CTF Organizers)
+## Progressive Hints 
 
-### Hint 1 (After 10 minutes)
+### Hint 1 
 🔍 **Network Analysis:** Look for HTTP traffic with large payloads. Images are encoded in Base64 and spread across multiple packets.
 
-### Hint 2 (After 20 minutes)
+### Hint 2
 📸 **Image Detection:** Look for large HTTP packets (11KB-58KB) using filter `http and frame.len > 10000`. There are 157 such packets containing image data.
 
-### Hint 3 (After 30 minutes)
+### Hint 3
 🔐 **Encoding Types:** Some images are double Base64 encoded. If single decoding doesn't work, try decoding twice. Use the automated solver for reliable extraction.
 
-### Hint 4 (After 45 minutes)
+### Hint 4
 📋 **Metadata Fields:** Flag parts are stored in different EXIF metadata fields: Software, Subject, Artist, ImageDescription, UserComment, Copyright, and LensModel.
 
-### Hint 5 (After 60 minutes)
+### Hint 5
 🔢 **Flag Parts:** Each image contains exactly one flag part in the format "PartX:chunkedflag" (Base64 encoded). Look for patterns like "Part1:", "Part2:", etc. The solver will find all 7 parts automatically.
 
-### Hint 6 (After 90 minutes)
+### Hint 6
 🎯 **Special Packet:** Check packet 69 (Frame 69 in Wireshark) for a special DuckDuckGo search that contains the password for the next challenge.
 
-### Hint 7 (Final)
+### Hint 7
 🏆 **Flag Assembly:** Combine all 7 flag parts in order (Part01 through Part07) and add the SecurinetsENIT{} wrapper. The complete flag is 47 characters long.
 
 ## Expected Flag
@@ -158,9 +158,4 @@ The final flag should be: `SecurinetsENIT{N3v3r_Tru5T_4_Fr33_W1F1_1n_3L_K4BB4R14
 **Medium** - Requires network forensics, steganography, and metadata analysis skills.
 
 ## Author
-
-Created for the Digital Forensics CTF Challenge Series.
-
----
-
-*"The Zodiac's digital footprint reveals more than he intended..."*
+C4spr0x1A
