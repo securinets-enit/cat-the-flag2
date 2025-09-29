@@ -11,6 +11,8 @@ Back at HQ, your team traces the Zodiac to a bustling café near Bab El Bhar. Ou
 
 Your handler slid a password across the desk: the one you pulled from the pastebin in Challenge 1. Inside the zip is the packet capture.
 
+Good hunting, agent. The coffee’s hot, the packets are hotter. 
+
 > “Listen to the café, agent. Even coffee grinders whisper…” — Captain Gorjeni
 
 ## 🧩 Objective
@@ -37,10 +39,3 @@ Your handler slid a password across the desk: the one you pulled from the pasteb
 
 ## ✅ Submission
 - Flag: `SecurinetsENIT{4r3_Y0u_R34LLY_4_N1Nj4??}`
-
-## 🔒 Anti‑unintended
-- Payloads are random filler; the meaningful data is only in headers
-- No plaintext flag in the pcap data blobs; grepping or strings won’t help
-- Noise traffic (ARP, DNS, extra GETs) is included to look realistic
-
-Good hunting, agent. The coffee’s hot, the packets are hotter. 

@@ -13,12 +13,12 @@ Welcome to the **Gorjeni Investigation Unit**, Agent!
 
 The notorious **Zodiac** has been operating in Tunisia, leaving a trail of cryptic messages and hidden clues. Your first lead comes in the form of a mysterious postcard that arrived at our headquarters this morning.
 
-The postcard appears to be from Tunisia, but our analysts suspect there's more to it than meets the eye. The Zodiac is known for his love of steganography and metadata manipulation. Can you uncover what he's hiding?
+The postcard appears to be from Tunisia, but our analysts suspect there's more to it than meets the eye. The Zodiac is known for his love of  manipulation. Can you uncover what he's hiding?
 
 ---
 
 ## 🎁 Challenge Files
-- `challenge1_postcard.jpg` - The mysterious postcard from Tunisia
+- `postcard.jpg` - The mysterious postcard from Tunisia
 
 ---
 

@@ -19,7 +19,7 @@ Players must use digital forensics techniques to:
 ---
 
 ## 📁 Files Provided to Players
-- `challenge1_postcard.jpg` - The main challenge file (1.5MB)
+- `postcard.jpg` - The main challenge file (1.5MB)
 
 ---
 
@@ -27,12 +27,12 @@ Players must use digital forensics techniques to:
 
 ### Step 1: Metadata Analysis
 **Tool**: ExifTool or any metadata viewer  
-**Command**: `exiftool challenge1_postcard.jpg`  
+**Command**: `exiftool postcard.jpg`  
 **Key Finding**: Password `Tr4cK_Th3_Tr41l` in UserComment field
 
 ### Step 2: Steganography Extraction
 **Tool**: Steghide  
-**Command**: `steghide extract -sf challenge1_postcard.jpg -p "Tr4cK_Th3_Tr41l"`  
+**Command**: `steghide extract -sf postcard.jpg -p "Tr4cK_Th3_Tr41l"`  
 **Result**: Extracts `Zodiac.jpg`
 
 ### Step 3: Flag Discovery

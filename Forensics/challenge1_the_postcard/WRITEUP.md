@@ -11,7 +11,7 @@
 ## 🔍 Step-by-Step Solution
 
 ### Step 1: Initial Analysis
-The challenge provides a single file: `challenge1_postcard.jpg`
+The challenge provides a single file: `postcard.jpg`
 
 This is a postcard image from Tunisia that appears to be a normal tourist postcard at first glance.
 
@@ -20,7 +20,7 @@ The first clue is in the challenge description: "Check the metadata carefully - 
 
 Using **ExifTool** to examine the metadata:
 ```bash
-exiftool challenge1_postcard.jpg
+exiftool postcard.jpg
 ```
 
 **Key Metadata Fields Found:**
@@ -35,7 +35,7 @@ exiftool challenge1_postcard.jpg
 The password "Tr4cK_Th3_Tr41l" is used with **Steghide** to extract hidden content:
 
 ```bash
-steghide extract -sf challenge1_postcard.jpg -p "Tr4cK_Th3_Tr41l"
+steghide extract -sf postcard.jpg -p "Tr4cK_Th3_Tr41l"
 ```
 
 This extracts a hidden file: `Zodiac.jpg`
