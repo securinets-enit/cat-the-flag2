@@ -1,0 +1,33 @@
+services:
+  novacain:
+    build: ./honest
+    image: honest
+    container_name: honest
+    networks:
+      - crypto
+    ports:
+      - "1003:1003"
+    restart: unless-stopped
+
+  puppet:
+    build: ./less_honest
+    image: less_honest
+    container_name: less_honest
+    networks:
+      - crypto
+    ports:
+      - "1004:1004"
+    restart: unless-stopped
+
+  eob:
+    build: ./dishonest
+    image: dishonest
+    container_name: dishonest
+    networks:
+      - crypto
+    ports:
+      - "1002:1002"
+    restart: unless-stopped
+
+networks:
+  crypto:

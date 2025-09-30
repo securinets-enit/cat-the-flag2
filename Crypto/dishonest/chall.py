@@ -6,19 +6,22 @@ import random
 from typing import List
 from secret import flag
 
-LIE_BASE = 0.58       
-MAX_ATTEMPTS = len(flag) * 100  
-HINT_FREQ = 0.003    
+LIE_BASE = 0.58
+MAX_ATTEMPTS = len(flag) * 100
+HINT_FREQ = 0.003
 SUSPICION_PENALTY = 0.25
-LENGTH_BIAS_SCALE = 0.5  
-TIME_NOISE_MAX = 0.002 
+LENGTH_BIAS_SCALE = 0.5
+TIME_NOISE_MAX = 0.002
+
 
 class Challenge:
     def __init__(self, flag: str) -> None:
         self.flag = flag
         self.attempts = MAX_ATTEMPTS
 
-        seed_material = hashlib.sha256(flag.encode('utf-8') + b"::dishonest_oracle::").digest()
+        seed_material = hashlib.sha256(
+            flag.encode("utf-8") + b"::dishonest_oracle::"
+        ).digest()
         self.rng = random.Random()
         self.hmac_key = hashlib.sha256(seed_material + b"::hmac_key::").digest()
         self.history: List[str] = []
@@ -77,12 +80,14 @@ class Challenge:
         if self.rng.random() < 0.3 and len(guess) > 0.4 * len(self.flag):
             self.truth_window_ticks = self.rng.randint(6, 7)
             return False
-        
+
         return self.rng.random() < lie_p
 
     def _maybe_emit_hint(self, guess: str) -> None:
         if self.rng.random() < HINT_FREQ:
-            mac = hmac.new(self.hmac_key, guess.encode('utf-8'), hashlib.sha256).hexdigest()
+            mac = hmac.new(
+                self.hmac_key, guess.encode("utf-8"), hashlib.sha256
+            ).hexdigest()
             hint = mac[:10]
             print(f"oracle hums: {hint}")
 
@@ -102,7 +107,9 @@ class Challenge:
 def main():
     challenge = Challenge(flag)
     print("Dishonest Oracle online. Ask nicely — but don't trust everything you hear.")
-    print("Tip: the oracle is stateful and adaptive. Repeating the same probe will often backfire!")
+    print(
+        "Tip: the oracle is stateful and adaptive. Repeating the same probe will often backfire!"
+    )
     print(f"You have {MAX_ATTEMPTS} attempts. Use them wisely.")
 
     while True:
@@ -127,5 +134,6 @@ def main():
         else:
             print("Nope, that's not it.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
