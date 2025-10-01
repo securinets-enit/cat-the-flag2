@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  flask-app:
+    build: .
+    container_name: secureportal_app
+    ports:
+      - "8004:8004"
+    volumes:
+      - .:/app
+    restart: unless-stopped
