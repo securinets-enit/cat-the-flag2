@@ -1,0 +1,43 @@
+From: Udemy Deals <promo@udemy.com>
+To: John Meller <john.meller@northbank.com>
+Subject: 🎓 Learn More for Less – Udemy Courses Up to 90% Off!
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Udemy Discounts</title></head>
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; background:#f4f4f4;">
+<table style="width:100%; border-collapse:collapse; background:#f4f4f4;">
+<tr><td align="center" style="padding:20px;">
+<table style="width:600px; background:#fff; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+<tr>
+<td style="background:#ec5252; color:white; padding:30px; text-align:center;">
+<h1 style="font-size:42px; margin:0;">🔥 Udemy Mega Sale!</h1>
+<p style="font-size:20px; margin:10px 0;">Upgrade your skills with up to <b>90% off</b>!</p>
+</td>
+</tr>
+<tr>
+<td style="padding:40px; color:#333; font-size:18px; line-height:1.6;">
+<h2 style="font-size:32px; margin:0 0 20px;">Popular Courses</h2>
+<ul style="margin:20px 0; padding-left:20px;">
+<li><b>Python for Beginners</b> – $9.99</li>
+<li><b>Mastering Web Development</b> – $12.99</li>
+<li><b>Cybersecurity Essentials</b> – $14.99</li>
+</ul>
+<div style="text-align:center; margin:30px 0;">
+<a href="https://www.udemy.com/courses/sale" style="display:inline-block; padding:15px 30px; background:#ec5252; color:white; font-size:20px; font-weight:bold; text-decoration:none; border-radius:8px;">Grab Courses Now</a>
+</div>
+<p style="font-size:16px;">Offer valid until August 31st.</p>
+</td>
+</tr>
+<tr>
+<td style="background:#f1f1f1; color:#555; padding:20px; text-align:center; font-size:14px;">
+<p style="margin:5px 0;">You are receiving this because you subscribed to Udemy promotions. <a href="#">Unsubscribe</a></p>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
+

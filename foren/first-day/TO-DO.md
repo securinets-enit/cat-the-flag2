@@ -1,0 +1,2 @@
+- The pcap is ready.
+- Decide on whether i put asker, or flag within a domain that i bought.

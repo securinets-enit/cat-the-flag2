@@ -1,0 +1,5 @@
+1. What is the compromized host's IP address? answer: 10.10.10.68
+
+2. The attacker tried to query a legit-looking website. what is it? answer: update-office369-microsoft.one
+
+3. Imagine I've bought the domain name and created a website in which is has a custom c2 and tooling. I m so tired. Here is the flag: SecurinetsENIT{33358610d1330b2244844ab8baf8c2e2} 
