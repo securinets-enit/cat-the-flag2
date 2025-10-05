@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Timetable{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Class Timetable</h2>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00-9:00</td>
+                        <td>Mathematics</td>
+                        <td>Physics</td>
+                        <td>Chemistry</td>
+                        <td>Mathematics</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>9:00-10:00</td>
+                        <td>English</td>
+                        <td>Mathematics</td>
+                        <td>Physics</td>
+                        <td>Chemistry</td>
+                        <td>Physical Education</td>
+                    </tr>
+                    <tr>
+                        <td>10:00-11:00</td>
+                        <td>Chemistry</td>
+                        <td>English</td>
+                        <td>Mathematics</td>
+                        <td>Physics</td>
+                        <td>History</td>
+                    </tr>
+                    <tr>
+                        <td>11:00-12:00</td>
+                        <td>Physics</td>
+                        <td>Chemistry</td>
+                        <td>English</td>
+                        <td>Mathematics</td>
+                        <td>Geography</td>
+                    </tr>
+                    <tr>
+                        <td>12:00-1:00</td>
+                        <td colspan="5" class="text-center table-warning">Lunch Break</td>
+                    </tr>
+                    <tr>
+                        <td>1:00-2:00</td>
+                        <td>History</td>
+                        <td>Geography</td>
+                        <td>Art</td>
+                        <td>Music</td>
+                        <td>Mathematics</td>
+                    </tr>
+                    <tr>
+                        <td>2:00-3:00</td>
+                        <td>Geography</td>
+                        <td>History</td>
+                        <td>Music</td>
+                        <td>Art</td>
+                        <td>Science Lab</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

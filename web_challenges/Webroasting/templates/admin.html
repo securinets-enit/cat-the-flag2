@@ -1,0 +1,7 @@
+<h2>Admin Access (Pass-the-Hash)</h2>
+{% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+<form method="post">
+  <input name="username" placeholder="Username" required>
+  <input name="kerberos_hash" placeholder="Kerberos Hash" required>
+  <button type="submit">Access Admin</button>
+</form>
