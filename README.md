@@ -18,17 +18,16 @@ Each challenge should include:
 
 - Web Exploitation. Author: h1dr1
 - Digital Forensics. Author: evilsal & C4spr0x1A
-- Binary Exploitation. Author: X-0R 
-- Reverse Engineering. Author: Ad3m
+- Binary Exploitation. Author: X-0R & Dexter
+- Reverse Engineering. Author: Ad3m & OTC
 - Threat Intelligence. Author: evilsal
 - OSINT: Author C4spr0x1A
 - Crypto: Bitraven
-  
-STILL LOOKING FOR AUTHORS: Misc
+
+With big thanks to M0m3nto for authoring even more tasks befre the CTF ended.
 
 ---
 
 ## ⏳ Time / Duration
-- **CTF Date:** Not yet decided, but somewhere between 15th September and 15th October.
-- **Duration:** We expect to host the CTF from 3 to 4 days.
+- **CTF Date:** 1st October 8PM -> 3rd October midnight.
 
