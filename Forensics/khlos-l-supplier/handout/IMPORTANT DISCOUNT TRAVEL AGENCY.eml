@@ -1,0 +1,61 @@
+From: TravelNow <offers@travelnow.com>
+To: John Meller <john.meller@northbank.com>
+Subject: ✈️ Exclusive Travel Discounts – Plan Your Dream Trip!
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Travel Discounts</title></head>
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; background-color:#f4f4f4;">
+<table style="width:100%; border-collapse:collapse; background:#f4f4f4;">
+<tr><td align="center" style="padding:20px;">
+<table style="width:700px; background:#fff; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+<tr>
+<td style="background:#00aaff; color:white; padding:40px; text-align:center;">
+<h1 style="font-size:48px; margin:0;">🌴 TravelNow Mega Discounts!</h1>
+<p style="font-size:22px; margin-top:10px;">Book your dream vacation for less – up to <b>50% off</b> on select destinations!</p>
+</td>
+</tr>
+<tr>
+<td style="padding:40px; color:#333; font-size:20px; line-height:1.8;">
+<p>Dear John,</p>
+<p>We know you’ve been dreaming of your next adventure. Whether it’s lounging on tropical beaches, exploring European cities, or hiking scenic mountains, now is the perfect time to book your getaway. Our exclusive TravelNow offers make it easy for you to travel more and spend less.</p>
+
+<h2 style="font-size:32px; color:#00aaff; margin:30px 0 15px;">Hot Deals This Month</h2>
+
+<div style="background:#f9f9f9; padding:25px; border-radius:10px; margin-bottom:20px; border-left:6px solid #00aaff;">
+<h3 style="font-size:28px; margin:0 0 10px;">🌴 Maldives Luxury Package</h3>
+<p>Enjoy 7 nights in a luxury overwater villa, all-inclusive, now only <b>$1,999</b> (was $3,999)!</p>
+</div>
+
+<div style="background:#f9f9f9; padding:25px; border-radius:10px; margin-bottom:20px; border-left:6px solid #00aaff;">
+<h3 style="font-size:28px; margin:0 0 10px;">🏰 Paris Romantic Getaway</h3>
+<p>3 nights at a 5-star hotel, Seine river cruise, and breakfast included. Only <b>$799</b> (was $1,499)!</p>
+</div>
+
+<div style="background:#f9f9f9; padding:25px; border-radius:10px; margin-bottom:20px; border-left:6px solid #00aaff;">
+<h3 style="font-size:28px; margin:0 0 10px;">🗻 Swiss Alps Adventure</h3>
+<p>5 nights skiing and sightseeing with guided tours. Only <b>$1,299</b> (was $2,299)!</p>
+</div>
+
+<p>Don’t miss out – these exclusive discounts are only valid until <b>August 31st</b>!</p>
+
+<div style="text-align:center; margin:40px 0;">
+<a href="https://travelnow.com/deals" style="display:inline-block; padding:20px 40px; background:#00aaff; color:white; font-size:24px; font-weight:bold; text-decoration:none; border-radius:50px;">Explore Deals Now</a>
+</div>
+
+<p>Pack your bags and make unforgettable memories!</p>
+</td>
+</tr>
+<tr>
+<td style="background:#f1f1f1; color:#555; padding:20px; text-align:center; font-size:14px;">
+<p style="margin:5px 0;">You are receiving this email because you subscribed to TravelNow offers. <a href="#">Unsubscribe</a> | <a href="#">Manage Preferences</a></p>
+<p style="margin:5px 0;">&copy; 2025 TravelNow Inc. All rights reserved.</p>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
+
