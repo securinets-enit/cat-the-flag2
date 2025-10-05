@@ -9,7 +9,7 @@ Your job: analyze his emails and check if anything suspicious has been sent rece
 
 Fingers crossed it’s nothing bad.
 
-Answer the questions at: `nc <IP> <PORT>`
-
+Flag: Find out what does Securinets ENIT says?
+Format: SecurinetsENIT{<whatever securinets enit says>}
 
 **Author:** 7ankalis

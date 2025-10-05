@@ -1,0 +1,15 @@
+sudo losetup --find --show evilsal.img
+sudo kpartx -av /dev/loop74
+sudo fsck -y /dev/mapper/loop74p1
+sudo mount /dev/mapper/loop74p1 /mnt/evilsal
+findmnt -no SOURCE,TARGET,OPTIONS /mnt/evilsal
+# OPTIONS should include "rw"
+
+--------------------
+
+sudo umount /mnt/evilsal
+sudo kpartx -dv /dev/loop74
+sudo losetup -d /dev/loop74   # detach loop device
+
+
+--------------------

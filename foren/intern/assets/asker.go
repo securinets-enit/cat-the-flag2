@@ -24,7 +24,7 @@ func main() {
 		{"At what time did it fail?", "17:06:45"},
 		{"When did the successful download occur?", "17:10:53"},
 		{"Upon gaining the initial foothold, a file was requested more than once. What is that file's name?", "HeadOfITNotice.eml"},
-		{`You should be able to recover the the files in here:
+		{`You should be able to recover the the files in here (use CyberChef and decode from base64):
 HeadOfITNotice.eml:
 RnJvbTogSGVhZCBvZiBJVCA8aXQtaGVhZEBub3J0aC1iYW5rLmNvbT4NClRvOiBzYW1pcmxvdXNz
 aWZAbm9ydGgtYmFuay5jb20NClN1YmplY3Q6IFBhc3N3b3JkIFVwZGF0ZSBSZXF1aXJlZA0KRGF0
