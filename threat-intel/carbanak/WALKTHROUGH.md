@@ -1,4 +1,7 @@
-## Carbanak 
+## WALKTHROUGH: Carbanak
+
+This is the second challenge in the Threat Intelligence category, knowing the `MITRE ATT&CK` now the player has a minimum tooling to gather intel on the threat intelligence. 
+Given this challenge description, we knoww the field you're working at: `insurance/banking` and the threat actor's name: `Carbanak` now we don't need to overcomplicate it.
 
 ### Description 
 
@@ -7,8 +10,6 @@ You are a cybersecurity analyst at a major Insurance and Banking firm. Recently,
 After sharing informations with other Threat Intelligence teams, turns out that these techniques were used by a threat actor group known as Carbanak. This group was decalared as neutralized. 
 
 Your job is to investiagate this group and map its weapons. 
-
-Answer the questions by connecting to: nc <PORT> <IP>
 
 **Author:** 7ankalis
 
@@ -45,4 +46,3 @@ questions := []question{
 {"According to reporting, approximately how many billion dollars did Carbanak steal worldwide? (in USD) Just submit a number", "1"},
 {"In which year did Europol announce the arrest of a key Carbanak leader?", "2018"},
 }
-```
