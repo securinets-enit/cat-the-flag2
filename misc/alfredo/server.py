@@ -13,7 +13,7 @@ import socketserver
 import sys
 
 # The exact flag value you requested
-FLAG = "SecurinetsENIT{8ea0117cab55c2cfa9e9ce4e7d6b16f9}"
+FLAG = "Securinets_fst{8ea0117cab55c2cfa9e9ce4e7d6b16f9}"
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 31337
 
 class Handler(http.server.SimpleHTTPRequestHandler):
